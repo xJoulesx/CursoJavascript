@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tercero del dia Once</title>
+    <script type="text/javascript">
+        function enviar(){
+            if(forma.nombre.value.trim()==""){
+                alert("Campo nombre Vacio..!!");
+                forma.nombre.focus();
+            }
+            alert("Genero tiene: "+forma.genero.length+" Opciones");
+            alert("Femenino: "+forma.genero[0].checked);
+            alert("Masculino: "+forma.genero[1].checked);
+            
+        }
+        
+        function enviar3(){
+            if(confirm("Desea enviar la data?")){
+                enviar();
+            }else{
+                alert("Ok siga en la pagina..");
+            }
+        }
+    </script>
+</head>
+<body>
+   <form name="forma">
+       Nombre:
+       <input type="text" name="nombre"/><br>
+       Genero:
+       <input type="radio" name="genero" value="F"/>Femenino
+       <input type="radio" name="genero" value="M"/>Masculino<br>
+       <input type="button" name="send" value="Enviar" onclick="enviar3()"/>
+       
+   </form>
+    
+</body>
+</html>

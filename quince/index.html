@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>QUINCE</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <form name="forma">
+        <input type="radio" name="edad" value="10"/>
+        <input type="radio" name="edad" value="20"/>
+        <input type="button" value="Enviar" onclick="verificar()"/>
+        <br><br><br><br><br>
+        <div id="mensaje"></div>
+        Femenino<input type="radio" name="genero" value="F" onclick="limpiar()" />
+        Masculino<input type="radio" name="genero" value="M" onclick="limpiar()" />
+        <select name="pais" >
+            <option value="0">seleccione</option>
+            <option value="1">Venezuela</option>
+            <option value="2">Otros</option>
+        </select>
+        <br>
+        <input type="button" value="Enviar" onclick="verificar2()"/>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Diez</title>
+	<script type="text/javascript">
+
+		window.onload=function(){
+			//console.log(document.forms[0].elements[0].value);
+			//alert(document.forms.length);
+			//var campo = document.forms[0].elements[0].value;
+			//console.log("Hola tiene: "+campo.length+" letras");
+			//console.log("Puedo colocarla asi: "+campo.toUpperCase());
+			//document.forms[0].elements[0].value = "Nuevo Valor";
+			//console.log(document.forma.elements[0].value);
+			//console.log(document.forma.campo.value);
+			//console.log(document.forma.campo.value.length);
+			/*var nombre=document.forma.campo.value;
+			alert("el campo tiene: "+nombre);
+			console.log(nombre);
+			nombre=document.forma.campo.value="Es este el campo";
+			alert("Ahora el campo tiene: "+nombre);
+			console.log(nombre);
+			if (nombre.length == 0) {
+				alert("Pilas el campo es obligatorio...");
+				console.log("es cero...");
+			} else{
+				alert("Muy Bien..!!");
+				console.log("No es cero..");
+			}*/
+
+			var conten=document.getElementById('contenedor');
+			//console.log(conten);
+			console.log(conten.innerHTML);
+			//conten.innerHTML=document.forma.campo.value;
+			var campo1=document.getElementById("campito");
+			campo1.value="Valor Final";
+			conten.style.color="red";
+			conten.style.backgroundColor="yellow";
+			conten.style.fontSize=70;
+
+		}
+
+	</script>
+</head>
+<body>
+	
+	<form name="forma">
+		<input name="campo" type="text" value="Hola" id="campito" />
+		<br>
+		<input placeholder="campo"/>
+	</form>
+	<div id="contenedor">Contenido</div>
+	
+</body>
+</html>

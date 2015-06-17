@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Doce (Examen)</title>
+    <script type="text/javascript">
+        //REspuesta 3
+        window.onload=function(){
+            formulario.campo.value="Valor Nuevo";
+        }
+            //REspuesta 4
+            console.log(location.href);
+        //REspuesta 2
+        function cambiarFondo(){
+            if(formulario.boton.style.backgroundColor==""){
+                formulario.boton.style.backgroundColor="yellow";
+            }else if(formulario.boton.style.backgroundColor=="yellow"){
+                formulario.boton.style.backgroundColor="blue";
+            }else if(formulario.boton.style.backgroundColor=="blue"){
+                formulario.boton.style.backgroundColor="red";
+            }else{
+                formulario.boton.style.backgroundColor="";
+            }
+        }
+        //REspuesta 5
+        function redireccionar(){
+            window.location.href="http://www.google.com";
+        }
+        
+    </script>
+</head>
+<body>
+    <form name="formulario">
+        
+        <input type="button" name="boton" value="boton" onclick="cambiarFondo()" />
+        <input type="text" value="Hola Mundo" name="campo"/>
+        <br><br>
+        <input type="button" name="otroboton" value="redirec" onclick="redireccionar()" />
+        
+    </form>
+</body>
+</html>
+

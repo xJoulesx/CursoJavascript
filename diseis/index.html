@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diesyseis</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script> 
+    <script type="text/javascript">
+        function ejecutar(){
+            //$("#contenedor").html("<h1>HOLA...!!</h1>");
+            //$("div").html("<h1>Hola X2...</h1>");
+            //$("div").text("<h1>HOlAx2</h1>");
+            $("div").css({
+                "border-width":"1px","border-style":"solid","border-color":"red",backgroundColor:"blue",width:100,height:100
+            });
+        }
+        
+        $(function(){
+            //alert("Algodon...");
+            
+        });
+    </script>
+</head>
+<body>
+
+   <!-- <img src="img/doom-reboot-e3-2015-001.jpg" name="laImagen" width="200" height="100" border="0" />
+   <input type="button" value="inspeccionar" onclick="ver()" onmouseover="cambiarOn(this)" onmouseout="cambiarOff(this)" /> -->
+
+   
+    <div id="contenedor"></div>
+    <input type="button" value="Ejecutar" onclick="ejecutar()" />
+    <div id="contenedor2"></div>
+    
+</body>
+</html>

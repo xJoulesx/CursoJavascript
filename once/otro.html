@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mover</title>
+    <script type="text/javascript">
+        function mover(){
+            ventana.moveBy(3,0);
+            i++;
+            if(i<50){
+                setTimeout("mover()",1000);
+            }else{
+                ventana.close();
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var opciones="left=0,top=0,width=150,height=200";
+        i = 0;
+        ventana=window.open("","Mi ventana",opciones);
+        ventana.document.write("Me muevo ... ");
+        ventana.moveTo(500,500);
+        mover();
+    </script>
+</body>
+</html>

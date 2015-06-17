@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Once</title>
+	<script type="text/javascript">
+		window.onload=function  () {
+			//console.log(forma.campo.value);
+			//window.history.go(1);
+			//console.log(window.history.length);
+			//window.history.forward();
+            //console.log(location.pathname);
+            //window.location.href="http://www.google.com";
+            //window.location.reload();
+            
+            
+		}
+        function saludo(){
+            //alert(forma.campo.value);
+            forma.enviar.style.border="1px solid blue";
+            //forma.enviar.style.backgroundColor="";
+            //console.log("Comienzo"+forma.campo.value.trim()+"Fin");
+            if(forma.enviar.style.backgroundColor==""){
+                forma.enviar.style.backgroundColor="blue";
+            }else if(forma.enviar.style.backgroundColor=="blue"){
+                forma.enviar.style.backgroundColor="red";
+            }else{
+                forma.enviar.style.backgroundColor="";
+            }
+        }
+        
+	</script>
+</head>
+<body>
+	<form name="forma">
+		<input type="text" name="campo"value="valor del input" />
+		<input type="button" name="enviar" value="send" onclick="saludo()"/>
+	</form>
+
+</body>
+</html>
